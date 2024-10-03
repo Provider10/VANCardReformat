@@ -13,7 +13,7 @@ Vhen downloading PDF documents from VAN, typically the result is a printscreen d
 
 ## Installation and Usage
 
-Download python script and place in seperate folder on system. Then run
+Download python script and place in seperate folder on system. Then run via bash terminal or equivalent:
 
 ```bash
 python VanCardConvert.py
