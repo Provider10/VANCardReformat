@@ -3,17 +3,20 @@ import subprocess
 import os
 from PyPDF2 import PdfReader as reader
 
+## Creates necessary Folders
 if len(glob.glob('Reformatted_Cards')) == 0:
     subprocess.run('mkdir Reformatted_Cards', check = True, shell=True)
 if len(glob.glob('Original_Cards')) == 0:
     subprocess.run('mkdir Original_Cards', check = True, shell=True)
-    raise SystemExit('Please import cards into "Original Cards"')
+    raise SystemExit('Please import cards into "Original_Cards"')
 
 unformatted_cards = glob.glob('./Original_Cards/*.pdf')
 
+## Spaces cause formatting errors down the line
 for filename in unformatted_cards:
     os.rename(filename, filename.replace(" ", "-"))
 
+## Reinitializing variable
 unformatted_cards = glob.glob('./Original_Cards/*pdf')
 
 for card in unformatted_cards:
