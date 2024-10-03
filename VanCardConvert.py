@@ -22,7 +22,7 @@ unformatted_cards = glob.glob('./Original_Cards/*pdf')
 for card in unformatted_cards:
     the_file = reader(card)
     box = the_file.pages[0].mediabox
-    if box.width/72>=16:
+    if box.width/72>=16: # Checks for width over 16 inches, as is common for cards done on computers rather than phones
         subprocess.run('pdfposter -s0.5 '+card +" "+'./Reformatted'+card[10:], check = True, shell=True)
     else:
         try:
