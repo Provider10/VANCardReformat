@@ -3,7 +3,7 @@
 VAN Card Reformatter is a python script for taking PDFs of Member cards from VAN and reformatting them to fit on multiple 8.5 x 11 pages
 
 ## Description
-Vhen downloading PDF documents from VAN, typically the result is a printscreen dependent on the device's size. This reformats the printscreen PDF to either shrink or expand to make accessible to 8.5x11 pages. The primary use case is to send to employers for them to keep for this records, however this can also be used for internal storage purposes. 
+When downloading PDF documents from VAN, typically the result is a printscreen dependent on the device's size. This reformats the printscreen PDF to either shrink or expand to make accessible to 8.5x11 pages. The primary use case is to send to employers for them to keep for this records, however this can also be used for internal storage purposes. 
 
 # Getting Started
 
@@ -29,4 +29,4 @@ Please make sure to update tests as appropriate.
 
 ## License
 
-N/A
+ This work is licensed under (Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International)[https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1] 
